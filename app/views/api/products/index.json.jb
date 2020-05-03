@@ -1,0 +1,9 @@
+@products.map do |product|
+  {
+    id: product.id,
+    name: product.name,
+    description: product.description,
+    gender: product.gender,
+    supplier_id: product.supplier_id,
+  }
+end
