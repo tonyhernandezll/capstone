@@ -2,8 +2,11 @@
   {
     id: product.id,
     name: product.name,
+    price: product.price,
     description: product.description,
     gender: product.gender,
     supplier_id: product.supplier_id,
+    images: product.images,
+    image: product.images.first,
   }
 end

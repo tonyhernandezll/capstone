@@ -10,6 +10,7 @@ class Api::UsersController < ApplicationController
       email: params[:email],
       password: params[:password],
       password_confirmation: params[:password_confirmation],
+
     )
     if user.save
       render json: { message: "User created successfully" }, status: :created
@@ -18,11 +19,9 @@ class Api::UsersController < ApplicationController
     end
   end
 
-  def show
-    def show
-      product_id = params["id"]
-      @product = Product.find_by(id: product_id)
-      render "show.json.jb"
-    end
-  end
+  # def show
+  #   user = current_user.id,
+  #   @user = User.find_by(id: user)
+  #   render "show.json.jb"
+  # end
 end
