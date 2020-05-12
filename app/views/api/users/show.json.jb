@@ -1,7 +1,8 @@
-# {
-#   user_id: @user.user_id,
-#   name: @user.name,
-#   email: @user.email,
-#   id: @product.id,
-
-# }
+{
+  id: @user.id,
+  # user_id: @user.user_id,
+  name: @user.name,
+  email: @user.email,
+  products: @user.products,
+  carted_products: @user.carted_products,
+}
