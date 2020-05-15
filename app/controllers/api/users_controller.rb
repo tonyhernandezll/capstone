@@ -22,6 +22,7 @@ class Api::UsersController < ApplicationController
   def show
     user_id = params["id"]
     @user = User.find_by(id: user_id)
+
     render "show.json.jb"
   end
 end

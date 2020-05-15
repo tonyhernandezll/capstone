@@ -10,7 +10,7 @@ class Api::ProductsController < ApplicationController
       price: params["price"],
       description: params["description"],
       gender: params[:gender],
-      supplier_id: params["supplier_id"],
+      # supplier_id: params["supplier_id"],
     )
     @product.save
     render "show.json.jb"
