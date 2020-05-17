@@ -5,7 +5,7 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.decimal :price
       t.text :description
       t.string :gender
-      t.integer :supplier_id
+      t.integer :size
       t.integer :user_id
 
       t.timestamps

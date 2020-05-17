@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 2020_05_03_183924) do
     t.decimal "price"
     t.text "description"
     t.string "gender"
-    t.integer "supplier_id"
+    t.integer "size"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -81,6 +81,7 @@ ActiveRecord::Schema.define(version: 2020_05_03_183924) do
     t.string "name"
     t.string "email"
     t.string "phone_number"
+    t.text "address"
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
