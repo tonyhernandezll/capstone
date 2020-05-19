@@ -10,6 +10,7 @@ class Api::ProductsController < ApplicationController
       price: params[:price],
       description: params[:description],
       gender: params[:gender],
+      size: params[:size],
       # supplier_id: params["supplier_id"],
     )
     @product.save

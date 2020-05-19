@@ -3,6 +3,7 @@
   # user_id: @user.user_id,
   name: @user.name,
   email: @user.email,
+  address: @user.address,
   products: @user.products.map do |product|
     {
       name: product.name,
@@ -10,6 +11,8 @@
       description: product.description,
       gender: product.gender,
       images: product.images,
+      size: product.size,
+      user_address: product.user.address,
 
     }
   end,

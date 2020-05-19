@@ -4,6 +4,7 @@
   price: @product.price,
   description: @product.description,
   gender: @product.gender,
+  size: @product.size,
   user_id: @product.user_id,
   images: @product.images,
 
