@@ -22,4 +22,9 @@ class Api::ProductsController < ApplicationController
     @product = Product.find_by(id: product_id)
     render "show.json.jb"
   end
+
+  def analyze
+    json = Product.first.transcribe(params[:url])
+    render json: json
+  end
 end

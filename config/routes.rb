@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get "/products/new" => "products/new"
     post "/products" => "products#create"
     get "/products/:id" => "products#show"
+    post "/analyze" => "products#analyze"
 
     get "/carted_products" => "carted_products#index"
     post "/carted_products" => "carted_products#create"
