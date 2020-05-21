@@ -10,7 +10,7 @@ class Product < ApplicationRecord
   has_many :images
 
   def transcribe(img_url)
-    uri = URI.parse("https://vision.googleapis.com/v1/images:annotate?key=" + "google_cloud_api")
+    uri = URI.parse("https://vision.googleapis.com/v1/images:annotate?key=" + "google cloud api goes here")
     request = Net::HTTP::Post.new(uri)
     request.content_type = "application/json"
     request.body = JSON.dump(

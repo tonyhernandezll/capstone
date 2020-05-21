@@ -21,6 +21,7 @@ class Api::CartedProductsController < ApplicationController
 
   def show
     product_id = params["id"]
+
     @carted_product = CartedProduct.find_by(id: product_id)
     render "show.json.jb"
   end
